@@ -1,0 +1,38 @@
+XORIGUERPRESSIÓ · APP WEB (PWA) PER A ANDROID I IPHONE
+======================================================
+
+Què és
+  La mateixa eina que el programa de Windows, com a pàgina web instal·lable.
+  Funciona sense connexió i les dades es guarden NOMÉS al telèfon.
+
+Com publicar-la (igual que l'altra app: Netlify)
+  1. Entra a https://app.netlify.com/drop
+  2. Arrossega-hi la CARPETA xoriguer-pressio (la que conté index.html).
+  3. Netlify et dona una adreça https://....netlify.app  (pots canviar-ne el nom).
+  Cal HTTPS (Netlify ja el porta) perquè es pugui instal·lar i funcioni offline.
+
+Com instal·lar-la al mòbil
+  Android (Chrome):  menú ⋮ → "Instal·la l'aplicació" (o "Afegeix a la pantalla d'inici").
+  iPhone (Safari):   botó Compartir → "Afegeix a la pantalla d'inici".
+                     (Ha de ser Safari; des d'altres navegadors no surt l'opció.)
+
+Passar dades entre el mòbil i l'ordinador (pestanya DADES)
+  - "Desar còpia (.json)" és EL MATEIX format que el programa de Windows
+    (Documents\XoriguerPressio\dades.json).
+  - "Importar còpia o CSV…" permet AFEGIR (sense duplicats) o SUBSTITUIR.
+  - "Exportar a Excel (.csv)" s'obre amb Excel; el programa de Windows també
+    el pot importar amb "Importar Excel/CSV…".
+  Recomanació: desa una còpia .json fora del telèfon de tant en tant. L'app t'ho avisa
+  si fa més de 14 dies. A l'iPhone, Safari pot esborrar les dades d'una web que no
+  s'obre durant setmanes; instal·lada a la pantalla d'inici és més segura, però la
+  còpia .json és la garantia.
+
+Informe per al metge
+  DADES → "Crear informe PDF…" → tria el període → a la pantalla d'impressió
+  tria "Desar com a PDF" (Android) o Compartir → Desa a Fitxers (iPhone).
+
+Actualitzar l'app
+  Canvia els fitxers, puja el número de VERSION a sw.js (p. ex. xoriguerpressio-v2)
+  i torna a publicar a Netlify. Els mòbils agafen la versió nova en obrir-la amb connexió.
+
+Creat amb IA per Xavier Musté

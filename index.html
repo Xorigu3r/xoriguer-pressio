@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ca">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0A0B0E">
+<meta name="color-scheme" content="light dark">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Pressió">
+<meta name="application-name" content="XoriguerPressió">
+<meta name="description" content="Registre de la pressió arterial: classificació, mitjanes, gràfics i informe per al metge.">
+<title>XoriguerPressió</title>
+<link rel="manifest" href="manifest.json">
+<link rel="icon" type="image/png" href="icons/favicon-64.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<div id="app">
+  <header class="brand">
+    <img src="icons/mark-256.png" alt="" class="mark">
+    <div class="word"><b>XORIGUER</b> <span>PRESSIÓ</span></div>
+  </header>
+  <div id="userbar" class="userbar"></div>
+  <div id="notice"></div>
+  <main id="view"></main>
+  <nav class="tabs" id="tabs">
+    <button data-tab="mesures" class="on"><svg viewBox="0 0 24 24"><path d="M3 12h4l2-6 4 12 2-6h6"/></svg><span>Mesures</span></button>
+    <button data-tab="grafics"><svg viewBox="0 0 24 24"><path d="M4 20V4M4 20h16M8 15l4-4 3 3 5-6"/></svg><span>Gràfics</span></button>
+    <button data-tab="guia"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/></svg><span>Guia</span></button>
+    <button data-tab="dades"><svg viewBox="0 0 24 24"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg><span>Dades</span></button>
+  </nav>
+</div>
+<div id="modal" class="modal hidden"></div>
+<div id="toast" class="toast hidden"></div>
+<section id="report"></section>
+<script src="js/rules.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
