@@ -1,6 +1,6 @@
 // XoriguerPressió · funcionament sense connexió
 // Quan canviïs l'app, puja el número de versió perquè els mòbils agafin la nova.
-const VERSION = "xoriguerpressio-v1";
+const VERSION = "xoriguerpressio-v2";
 const APP = [
   "./", "index.html", "manifest.json", "css/app.css", "js/rules.js", "js/app.js",
   "vendor/fonts/pjs-400.woff2", "vendor/fonts/pjs-600.woff2", "vendor/fonts/pjs-700.woff2", "vendor/fonts/pjs-800.woff2",
@@ -13,7 +13,8 @@ self.addEventListener("install", e => {
 });
 self.addEventListener("activate", e => {
   e.waitUntil(caches.keys()
-    .then(keys => Promise.all(keys.filter(k => k !== VERSION).map(k => caches.delete(k))))
+    // Només esborra versions velles d'AQUESTA app: el domini xorigu3r.github.io el comparteixen altres apps Xoriguer.
+    .then(keys => Promise.all(keys.filter(k => k.startsWith("xoriguerpressio-") && k !== VERSION).map(k => caches.delete(k))))
     .then(() => self.clients.claim()));
 });
 self.addEventListener("fetch", e => {
