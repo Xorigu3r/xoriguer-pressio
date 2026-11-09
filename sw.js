@@ -1,6 +1,6 @@
 // XoriguerPressió · funcionament sense connexió
 // Quan canviïs l'app, puja el número de versió perquè els mòbils agafin la nova.
-const VERSION = "xoriguerpressio-v2";
+const VERSION = "xoriguerpressio-v3";
 const APP = [
   "./", "index.html", "manifest.json", "css/app.css", "js/rules.js", "js/app.js",
   "vendor/fonts/pjs-400.woff2", "vendor/fonts/pjs-600.woff2", "vendor/fonts/pjs-700.woff2", "vendor/fonts/pjs-800.woff2",
