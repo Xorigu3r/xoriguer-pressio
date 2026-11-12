@@ -35,4 +35,4 @@ Actualitzar l'app
   Canvia els fitxers, puja el número de VERSION a sw.js (p. ex. xoriguerpressio-v2)
   i torna a publicar a Netlify. Els mòbils agafen la versió nova en obrir-la amb connexió.
 
-Creat amb IA per Xavier Musté
+Creat per Xavier Musté

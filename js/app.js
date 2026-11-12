@@ -1,7 +1,7 @@
 /* XoriguerPressió · app web (PWA). Dades 100 % al telèfon (localStorage). */
 (() => {
 const APP_VERSIO = "1.0";
-const CREDIT = "Creat amb IA per Xavier Musté";
+const CREDIT = "Creat per Xavier Musté";
 const KEY = "xp.dades.v1", KEY_BAK = "xp.dades.v1.bak", KEY_COPIA = "xp.copia.", KEY_EXPORT = "xp.ultimaExportacio";
 const $ = (s, r = document) => r.querySelector(s);
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
