@@ -1,8 +1,8 @@
 // XoriguerPressió · funcionament sense connexió
 // Quan canviïs l'app, puja el número de versió perquè els mòbils agafin la nova.
-const VERSION = "xoriguerpressio-v3";
+const VERSION = "xoriguerpressio-v4";
 const APP = [
-  "./", "index.html", "manifest.json", "css/app.css", "js/rules.js", "js/app.js",
+  "./", "index.html", "manifest.json", "css/app.css", "marca/marca.css", "marca/Montserrat-ExtraBold.ttf", "js/rules.js", "js/app.js",
   "vendor/fonts/pjs-400.woff2", "vendor/fonts/pjs-600.woff2", "vendor/fonts/pjs-700.woff2", "vendor/fonts/pjs-800.woff2",
   "icons/icon-192.png", "icons/icon-512.png", "icons/maskable-512.png",
   "icons/apple-touch-icon.png", "icons/logo-informe.png", "icons/mark-256.png", "icons/favicon-64.png"
