@@ -329,7 +329,8 @@ function vDades() {
     <button class="btn" id="bJson">Desar còpia (.json)</button>
     <button class="btn sec" id="bCsv">Exportar a Excel (.csv)</button>
     <label class="btn sec" for="fImp" style="cursor:pointer">Importar còpia o CSV…</label>
-    <input type="file" id="fImp" accept=".json,.csv,application/json,text/csv" class="hidden"></div>
+    <input type="file" id="fImp" accept=".json,.csv,application/json,text/csv" class="hidden">
+    <div id="xoriguer-actualitza" data-classe="btn sec"></div></div>
     <p class="sub" style="margin:10px 0 0">El .json és el mateix format que el programa d'escriptori (Documents\\XoriguerPressio\\dades.json): pots passar dades en tots dos sentits. El .csv s'obre amb Excel i el programa d'escriptori també el pot importar.</p></section>
   <section class="card"><h2>Còpies automàtiques <small>${cp.length}</small></h2>
     ${cp.length ? cp.map(c => `<div class="urow"><span>${R.dataCat(c)}</span><button class="btn sec small" data-rest="${c}">Restaurar</button></div>`).join("") : '<p class="sub" style="margin:0">Encara no n\'hi ha. Es fa una còpia cada dia que desis dades (en queden 14).</p>'}
